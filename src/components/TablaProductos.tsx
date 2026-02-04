@@ -48,7 +48,7 @@ export default function TablaProductos() {
                 className="text-right py-3 px-4 cursor-pointer hover:text-white"
                 onClick={() => handleSort('cantidad')}
               >
-                Cantidad <SortIcon column="cantidad" />
+                Cantidad (unidad) <SortIcon column="cantidad" />
               </th>
               <th
                 className="text-right py-3 px-4 cursor-pointer hover:text-white"
@@ -75,8 +75,9 @@ export default function TablaProductos() {
                   <span className="font-medium text-white">{item.categoria}</span>
                 </td>
                 <td className="py-3 px-4 text-right text-gray-300">{item.numCompras}</td>
-                <td className="py-3 px-4 text-right text-gray-300">
-                  {item.cantidad.toLocaleString('es-CL', { maximumFractionDigits: 1 })}
+                <td className="py-3 px-4 text-right text-blue-400">
+                  <span className="font-mono">{item.cantidad.toLocaleString('es-CL', { maximumFractionDigits: 1 })}</span>
+                  <span className="text-gray-500 ml-1 text-xs">{item.unidad}</span>
                 </td>
                 <td className="py-3 px-4 text-right font-mono text-green-400 font-semibold">
                   {formatCurrency(item.montoTotal)}

@@ -4,6 +4,7 @@ export interface CategoriaData {
   categoria: string;
   numCompras: number;
   cantidad: number;
+  unidad: string;
   montoTotal: number;
   precioMedio: number;
 }
@@ -37,36 +38,36 @@ export interface ComparativaData {
 
 // Resumen por categoría de producto
 export const categoriaData: CategoriaData[] = [
-  { categoria: 'PALTA', numCompras: 42, cantidad: 62, montoTotal: 2623500, precioMedio: 42315 },
-  { categoria: 'SALMON', numCompras: 6, cantidad: 121.5, montoTotal: 1646562, precioMedio: 13552 },
-  { categoria: 'QUESO CREMA', numCompras: 11, cantidad: 19, montoTotal: 1495823, precioMedio: 165743 },
-  { categoria: 'POLLO', numCompras: 19, cantidad: 702, montoTotal: 1012893, precioMedio: 1443 },
-  { categoria: 'ARROZ', numCompras: 11, cantidad: 63, montoTotal: 773199, precioMedio: 12273 },
-  { categoria: 'ATUN', numCompras: 7, cantidad: 82.9, montoTotal: 648258, precioMedio: 7821 },
-  { categoria: 'NORI', numCompras: 11, cantidad: 56, montoTotal: 531440, precioMedio: 9490 },
-  { categoria: 'MAYONESA', numCompras: 14, cantidad: 34, montoTotal: 509633, precioMedio: 14989 },
-  { categoria: 'ACEITE', numCompras: 8, cantidad: 20, montoTotal: 370000, precioMedio: 18500 },
-  { categoria: 'MARACUYA', numCompras: 15, cantidad: 46, montoTotal: 270192, precioMedio: 5874 },
-  { categoria: 'FILM/PAPEL', numCompras: 17, cantidad: 84, montoTotal: 258323, precioMedio: 3075 },
-  { categoria: 'CERDO', numCompras: 8, cantidad: 780, montoTotal: 234000, precioMedio: 300 },
-  { categoria: 'BANDEJAS/ENVASES', numCompras: 9, cantidad: 9, montoTotal: 219790, precioMedio: 24421 },
-  { categoria: 'CAMARON', numCompras: 8, cantidad: 302, montoTotal: 210500, precioMedio: 697 },
-  { categoria: 'PULPO', numCompras: 1, cantidad: 17, montoTotal: 169830, precioMedio: 9990 },
-  { categoria: 'TERIYAKI', numCompras: 4, cantidad: 10, montoTotal: 139900, precioMedio: 13990 },
-  { categoria: 'EMPANADAS/ARROLLADOS', numCompras: 3, cantidad: 4, montoTotal: 114000, precioMedio: 28500 },
-  { categoria: 'PANKO', numCompras: 6, cantidad: 60, montoTotal: 107400, precioMedio: 1790 },
-  { categoria: 'WASABI', numCompras: 11, cantidad: 18, montoTotal: 106326, precioMedio: 5907 },
-  { categoria: 'GYOZAS', numCompras: 7, cantidad: 270, montoTotal: 97200, precioMedio: 360 },
-  { categoria: 'AZUCAR', numCompras: 9, cantidad: 11, montoTotal: 86790, precioMedio: 7890 },
-  { categoria: 'HARINA', numCompras: 10, cantidad: 10, montoTotal: 81093, precioMedio: 8109 },
-  { categoria: 'SERVILLETAS', numCompras: 5, cantidad: 8, montoTotal: 59805, precioMedio: 7476 },
-  { categoria: 'AJI', numCompras: 8, cantidad: 23, montoTotal: 57500, precioMedio: 2500 },
-  { categoria: 'ALMENDRAS', numCompras: 3, cantidad: 4, montoTotal: 55960, precioMedio: 13990 },
-  { categoria: 'VINAGRE', numCompras: 10, cantidad: 16, montoTotal: 53280, precioMedio: 3330 },
-  { categoria: 'TOFU', numCompras: 11, cantidad: 23, montoTotal: 51892, precioMedio: 2256 },
-  { categoria: 'LIMPIEZA', numCompras: 11, cantidad: 29, montoTotal: 50895, precioMedio: 1755 },
-  { categoria: 'YOGURT', numCompras: 5, cantidad: 15, montoTotal: 45080, precioMedio: 3005 },
-  { categoria: 'POSTRES', numCompras: 4, cantidad: 21, montoTotal: 38850, precioMedio: 1850 },
+  { categoria: 'PALTA', numCompras: 42, cantidad: 62, unidad: 'cajas', montoTotal: 2623500, precioMedio: 42315 },
+  { categoria: 'SALMON', numCompras: 6, cantidad: 121.5, unidad: 'kg', montoTotal: 1646562, precioMedio: 13552 },
+  { categoria: 'QUESO CREMA', numCompras: 11, cantidad: 19, unidad: 'cajas', montoTotal: 1495823, precioMedio: 165743 },
+  { categoria: 'POLLO', numCompras: 19, cantidad: 702, unidad: 'kg', montoTotal: 1012893, precioMedio: 1443 },
+  { categoria: 'ARROZ', numCompras: 11, cantidad: 63, unidad: 'bolsas', montoTotal: 773199, precioMedio: 12273 },
+  { categoria: 'ATUN', numCompras: 7, cantidad: 82.9, unidad: 'kg', montoTotal: 648258, precioMedio: 7821 },
+  { categoria: 'NORI', numCompras: 11, cantidad: 56, unidad: 'paq', montoTotal: 531440, precioMedio: 9490 },
+  { categoria: 'MAYONESA', numCompras: 14, cantidad: 34, unidad: 'gal', montoTotal: 509633, precioMedio: 14989 },
+  { categoria: 'ACEITE', numCompras: 8, cantidad: 20, unidad: 'bid', montoTotal: 370000, precioMedio: 18500 },
+  { categoria: 'MARACUYA', numCompras: 15, cantidad: 46, unidad: 'kg', montoTotal: 270192, precioMedio: 5874 },
+  { categoria: 'FILM/PAPEL', numCompras: 17, cantidad: 84, unidad: 'un', montoTotal: 258323, precioMedio: 3075 },
+  { categoria: 'CERDO', numCompras: 8, cantidad: 780, unidad: 'un', montoTotal: 234000, precioMedio: 300 },
+  { categoria: 'BANDEJAS/ENVASES', numCompras: 9, cantidad: 9, unidad: 'cajas', montoTotal: 219790, precioMedio: 24421 },
+  { categoria: 'CAMARON', numCompras: 8, cantidad: 302, unidad: 'un', montoTotal: 210500, precioMedio: 697 },
+  { categoria: 'PULPO', numCompras: 1, cantidad: 17, unidad: 'kg', montoTotal: 169830, precioMedio: 9990 },
+  { categoria: 'TERIYAKI', numCompras: 4, cantidad: 10, unidad: 'kg', montoTotal: 139900, precioMedio: 13990 },
+  { categoria: 'EMPANADAS/ARROLLADOS', numCompras: 3, cantidad: 4, unidad: 'cajas', montoTotal: 114000, precioMedio: 28500 },
+  { categoria: 'PANKO', numCompras: 6, cantidad: 60, unidad: 'kg', montoTotal: 107400, precioMedio: 1790 },
+  { categoria: 'WASABI', numCompras: 11, cantidad: 18, unidad: 'kg', montoTotal: 106326, precioMedio: 5907 },
+  { categoria: 'GYOZAS', numCompras: 7, cantidad: 270, unidad: 'un', montoTotal: 97200, precioMedio: 360 },
+  { categoria: 'AZUCAR', numCompras: 9, cantidad: 11, unidad: 'kg', montoTotal: 86790, precioMedio: 7890 },
+  { categoria: 'HARINA', numCompras: 10, cantidad: 10, unidad: 'kg', montoTotal: 81093, precioMedio: 8109 },
+  { categoria: 'SERVILLETAS', numCompras: 5, cantidad: 8, unidad: 'paq', montoTotal: 59805, precioMedio: 7476 },
+  { categoria: 'AJI', numCompras: 8, cantidad: 23, unidad: 'un', montoTotal: 57500, precioMedio: 2500 },
+  { categoria: 'ALMENDRAS', numCompras: 3, cantidad: 4, unidad: 'kg', montoTotal: 55960, precioMedio: 13990 },
+  { categoria: 'VINAGRE', numCompras: 10, cantidad: 16, unidad: 'lt', montoTotal: 53280, precioMedio: 3330 },
+  { categoria: 'TOFU', numCompras: 11, cantidad: 23, unidad: 'un', montoTotal: 51892, precioMedio: 2256 },
+  { categoria: 'LIMPIEZA', numCompras: 11, cantidad: 29, unidad: 'un', montoTotal: 50895, precioMedio: 1755 },
+  { categoria: 'YOGURT', numCompras: 5, cantidad: 15, unidad: 'un', montoTotal: 45080, precioMedio: 3005 },
+  { categoria: 'POSTRES', numCompras: 4, cantidad: 21, unidad: 'un', montoTotal: 38850, precioMedio: 1850 },
 ];
 
 // Datos por proveedor
